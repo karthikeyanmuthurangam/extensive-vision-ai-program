@@ -152,4 +152,4 @@ Even sized filters are not prefered because the final output pixel that was obta
 |98|5x5|3x3|3x3|
 |99|3x3|3x3|1x1|
 
-We need to perform 99 times 3x3 convolution operation on 199x199 to reach 1x1
+##### We need to perform 99 times 3x3 convolution operation on 199x199 to reach 1x1
