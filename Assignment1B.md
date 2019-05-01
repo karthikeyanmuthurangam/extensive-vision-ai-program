@@ -1,5 +1,11 @@
 ### What are Channels and Kernels (according to EVA)?
 
+#### Channels
+
+
+
+#### Kernels
+
 In Image Processing, **kernel or filter** is used to *detect useful features* from an image. Applying multiple filters on an input image helps extract more features about an image.  
 
 Smaller size kernels are more efficient and usually odd value such as 1x1, 3x3, 5x5 are used. 
@@ -14,11 +20,13 @@ Bigger the size of the filter and the number of filters, bigger the number of pa
 
 ![Blur Kernel](http://aishack.in/static/img/tut/conv-simple-blur.jpg "Blur Kernel")
 
-
+![](https://upload.wikimedia.org/wikipedia/commons/0/04/Vd-Blur2.png)
 
 ###### Edge Detection
 
 ![Edge Detection](http://aishack.in/static/img/tut/conv-edge-detection.jpg "Edge Detection")
+
+![](https://upload.wikimedia.org/wikipedia/commons/6/6d/Vd-Edge3.png)
 
 ### Why should we only (well mostly) use 3x3 Kernels?
 
@@ -47,6 +55,8 @@ Even sized filters are not prefered because the final output pixel that was obta
 #### 3x3 Kernels
 
 3x3 kernel is a smallest odd kernel which has lower number of weights making it computationally efficient and learns the complex features without any distortions
+
+##### Any size of the kernel can be achieved by 3x3. For example 5x5 kernel can be achieved by 2 3x3 kernels. 7x7 kernel can be achieved by 3 3x3 kernels. This makes the 3x3 kernel more popular among other kernels
 
 ### How many times do we need to perform 3x3 convolution operation to reach 1x1 from 199x199 (show calculations)
 
