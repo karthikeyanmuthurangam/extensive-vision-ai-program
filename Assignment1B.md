@@ -84,7 +84,9 @@ Even sized filters are not prefered because the final output pixel that was obta
 
 3x3 kernel is a smallest odd kernel after 1x1 which has lower number of weights making it computationally efficient and learns the complex features without any distortions
 
-##### Any size of the kernel can be achieved by 3x3. For example 5x5 kernel can be achieved by 2 3x3 kernels. 7x7 kernel can be achieved by 3 3x3 kernels. This makes the 3x3 kernel more popular among other kernels
+##### Any size of the kernel can be achieved by 3x3. 
+
+For example 5x5 kernel can be achieved by 2 3x3 kernels. 7x7 kernel can be achieved by 3 3x3 kernels. **This makes the 3x3 kernel more popular among other kernels**
 
 ### How many times do we need to perform 3x3 convolution operation to reach 1x1 from 199x199 (show calculations)
 
