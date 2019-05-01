@@ -12,6 +12,8 @@ Our input data usually defines multiple variables at each position (through time
 
 Channels are representation of a view of the image as a whole, emphasising some aspects, de-emphasising others.
 
+<ins>RGB image with three channels<ins>
+  
 ![RGB Image with 3 channels](https://cdn-images-1.medium.com/max/2400/1*k8P28Ayl-5hOqIMSv-qosw.jpeg "RGB images with three channels")
 
 
