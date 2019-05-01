@@ -12,15 +12,17 @@ Our input data usually defines multiple variables at each position (through time
 
 Channels are representation of a view of the image as a whole, emphasising some aspects, de-emphasising others.
 
-![RGB Image with 3 channels](https://cdn-images-1.medium.com/max/2400/1*k8P28Ayl-5hOqIMSv-qosw.jpeg)
+![RGB Image with 3 channels](https://cdn-images-1.medium.com/max/2400/1*k8P28Ayl-5hOqIMSv-qosw.jpeg "RGB images with three channels")
 
 
-##### Input Channel
+<ins>Input Channel<ins>
+  
 When the input data contains multiple channels, we need to construct a convolution kernel with the same number of input channels as the input data, so that it can perform cross-correlation with the input data. 
 
 For example if the input data contains three channels (100x100x3) images, the kernel should also have 3 channels (3x3x3)
 
-##### Output Channel
+<ins>Output Channel<ins>
+  
 Each filter in a convolution layer produces one and only one output channel.
 
 Sometimes we actually increase the channel dimension as we go higher up in the neural network for greater channel depth
@@ -35,15 +37,15 @@ More kernels can be used to extract more features from an input image. The size 
 
 Bigger the size of the filter and the number of filters, bigger the number of parameters that needs to be derived by neural networks
 
-##### Sample Kernels
+<ins>Sample Kernels<ins>
 
-###### Blur
+<ins>Blur<ins>
 
 ![Blur Kernel](http://aishack.in/static/img/tut/conv-simple-blur.jpg "Blur Kernel")
 
 ![](https://upload.wikimedia.org/wikipedia/commons/0/04/Vd-Blur2.png)
 
-###### Edge Detection
+<ins>Edge Detection<ins>
 
 ![Edge Detection](http://aishack.in/static/img/tut/conv-edge-detection.jpg "Edge Detection")
 
@@ -51,31 +53,34 @@ Bigger the size of the filter and the number of filters, bigger the number of pa
 
 ### Why should we only (well mostly) use 3x3 Kernels?
 
-Typically smaller kernels are preferred over the larger kernels because
+Typically smaller kernels are preferred over the larger kernels in the Convolution Neural Network (CNN)
 
 Applying 5x5 kernel once, uses 25 (5x5) weights but applying 3x3 kernel twice uses only 18 (3x3 + 3x3) to get to the same final output
 
-* Needing lower number of weights to get to the same final output makes it computationally efficient. 
-* Need for a multiple smaller layer makes it easy to learn complex, more features.
+<ins>Adavantages of small kernels<ins>
 
-Few of the smaller kernels choices are
+* Need for lower number of weights to get to the same final output makes it computationally efficient. 
+* Need for a multiple smaller layer makes it easy to learn more complex features.
+
+Below are the available small kernels choices
 
 1. 1x1
 2. 2x2
 3. 3x3
 4. 4x4
 
-#### 1x1 Kernels
+<ins>1x1 Kernels<ins>
 
 
 Features extracted by the kernel would be local and doesn't consider neighboring pixels, so 1x1 is not used 
 
-#### 2x2 & 4x4 Kernels
+<ins>2x2 & 4x4 Kernels<ins>
+  
 Even sized filters are not prefered because the final output pixel that was obtained by convolving on the previous layer pixels will not be symmetrical leading to distortions across the layers
 
-#### 3x3 Kernels
+<ins>3x3 Kernels<ins>
 
-3x3 kernel is a smallest odd kernel which has lower number of weights making it computationally efficient and learns the complex features without any distortions
+3x3 kernel is a smallest odd kernel after 1x1 which has lower number of weights making it computationally efficient and learns the complex features without any distortions
 
 ##### Any size of the kernel can be achieved by 3x3. For example 5x5 kernel can be achieved by 2 3x3 kernels. 7x7 kernel can be achieved by 3 3x3 kernels. This makes the 3x3 kernel more popular among other kernels
 
