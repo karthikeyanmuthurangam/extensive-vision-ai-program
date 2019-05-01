@@ -2,7 +2,28 @@
 
 #### Channels
 
+Below is the list of convolutions and the data on which it is applied
 
+1. 1D Convolutions to 1 dimensional data (temporal)
+2. 2D Convolutions to 2 dimensional data (height and width)
+3. 3D Convolutions to 3 dimensional data (height, width and depth)
+
+Our input data usually defines multiple variables at each position (through time, or space), and not just a single value. This is called **channels**.
+
+Channels are representation of a view of the image as a whole, emphasising some aspects, de-emphasising others.
+
+![RGB Image with 3 channels](https://cdn-images-1.medium.com/max/2400/1*k8P28Ayl-5hOqIMSv-qosw.jpeg)
+
+
+##### Input Channel
+When the input data contains multiple channels, we need to construct a convolution kernel with the same number of input channels as the input data, so that it can perform cross-correlation with the input data. 
+
+For example if the input data contains three channels (100x100x3) images, the kernel should also have 3 channels (3x3x3)
+
+##### Output Channel
+Each filter in a convolution layer produces one and only one output channel.
+
+Sometimes we actually increase the channel dimension as we go higher up in the neural network for greater channel depth
 
 #### Kernels
 
