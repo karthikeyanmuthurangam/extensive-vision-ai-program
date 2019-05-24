@@ -2,7 +2,7 @@
 
 ## Summary
 
-Achieved 99.42 Validation accuracy with the following hyper parameters
+Achieved **99.42 Validation accuracy** with the following hyper parameters
 
 |Hyperparameter Name| Hyperparameter Value|
 |-------------------|---------------------|
@@ -11,10 +11,10 @@ Achieved 99.42 Validation accuracy with the following hyper parameters
 |Batch Size| 64|
 
 ### Model Code
-![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2333/model-code.png "Model Code")
+![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2334/model-code.png "Model Code")
 
 ### Accuracy & Loss Plot
-![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2333/accuracy-loss-plot.png "Accuracy & Loss Plot")
+![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2334/accuracy-loss-plot.png "Accuracy & Loss Plot")
 
 ## Basic Network Model (Session_4_First.ipynb)
 
