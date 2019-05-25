@@ -20,7 +20,7 @@ Achieved **99.1 Validation accuracy** with the following hyper parameters
 4. SoftMax
 
 
-### Observations
+#### Observations
 
 - Building a simple Neural Network model using the basic building block of CNN (Convolution, Pooling, Activation) and incrementally adding the right convolution/transition block at the right layer helps in the understanding the model better
 - Validation accuracy is always less than the training accuracy
@@ -46,6 +46,10 @@ Achieved **99.1 Validation accuracy** with the following hyper parameters
 ##### Distance of MaxPooling from Prediction
 - Maxpooling should not be positioned before the output layer because full image has been seen by the network, dropping any features at this point leads to missing some information on the input data
 
+##### 3x3
+
+3x3 helped in reducing the number of parameters and computation of the network (compared to large kernels like 5x5, 7x7, 9x9)
+
 ##### 1x1
 - 1x1 or Feature Merger helps in getting the best of all the channels. It didn't help in improve the accuracy in case of the MNIST dataset  
 
@@ -67,9 +71,22 @@ Achieved **99.42 Validation accuracy** with the following hyper parameters
 #### Concepts Used
 1. Batch Normalization
 2. DropOut
+3. Batch Size
 
 #### Observations
-- 
+
+##### Batch Normalization
+- Batch Normalization helps in avoing exploding gradient or vanishing gradient problem
+- Placing the Batch Normalization before or after the Convolution doesn't make any significant change in the accuracy
+- Should not be placed before the prediction layer as it will alter the output predictions
+
+##### Dropout
+
+- Dropout helps in reducing overfitting and the gap between the training and validation accuracy
+- Dropout of < 0.3 for this mdoel increases the accuracy and anything > 0.3 doesn't show any improvement in accuracy, actually reduces the accuracy
+
+##### Batch Size
+- Increasing the batch size from 32 to 64 has increased the validation accuracy and increasing it any further (>64) is not having any impact on the model accuracy
 
 ## MNIST Convolution Neural Network Model - 3 (Session_4_Third.ipynb)
 
@@ -91,6 +108,11 @@ Achieved **99.34 Validation accuracy** with the following hyper parameters
 
 #### Observations
 
+##### Learning Rate
+- Learning Rate helps in faster network convergence. 
+- Default learning Rate of the Adam optimizer is 0.001, increasing it to 0.003 and decreasing the learning rate with respect to the epoch has helped in improving the accuracy
+- Higher learning rate (> 0.004) has been improving the accuracy significantly in this model.
+
 ## MNIST Convolution Neural Network Model - 4 (Session_4_Fourth.ipynb)
 
 Achieved **99.42 Validation accuracy** with the following hyper parameters
@@ -108,7 +130,9 @@ Achieved **99.42 Validation accuracy** with the following hyper parameters
 ![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2334/accuracy-loss-plot.png "Accuracy & Loss Plot")
 
 #### Concepts Used
-1. Batch Size
-2. No. of epochs
+1. No. of epochs
 
 #### Observations
+
+##### No. of epochs
+- Increasing epochs from 10 to 30 has shown improvement in the training as well as validation accuracy. 
