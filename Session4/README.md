@@ -85,7 +85,7 @@ model.add(Activation('softmax'))
 
 ##### 3x3
 
-3x3 helped in reducing the number of parameters and computation of the network (compared to large kernels like 5x5, 7x7, 9x9)
+- 3x3 helped in reducing the number of parameters and computation in the network (compared to large kernels like 5x5, 7x7, 9x9)
 
 ##### 1x1
 - 1x1 or Feature Merger helps in getting the best of all the channels. It didn't help in improve the accuracy in case of the MNIST dataset  
@@ -210,7 +210,7 @@ model.add(Activation('softmax'))
 ##### Learning Rate
 - Learning Rate helps in faster network convergence. 
 - Default learning Rate of the Adam optimizer is 0.001, increasing it to 0.003 and decreasing the learning rate with respect to the epoch has helped in improving the accuracy
-- Higher learning rate (> 0.004) has been improving the accuracy significantly in this model.
+- Higher learning rate (> 0.004) is not improving the model accuracy
 
 ## MNIST Convolution Neural Network Model - 4 (Session_4_Fourth.ipynb)
 
