@@ -183,13 +183,13 @@ model.add(Activation('softmax'))
 
 ## MNIST Convolution Neural Network Model - 3 (Session_4_Third.ipynb)
 
-Achieved **99.34 Validation accuracy** with the following hyper parameters
+Achieved **99.2 Validation accuracy** with the following hyper parameters
 
 |Hyperparameter Name| Hyperparameter Value|
 |-------------------|---------------------|
 |No. of Parameters| 10,676|
 |No. of Epochs| 20 |
-|Batch Size| 128 |
+|Batch Size| 64 |
 
 #### Model Code
 
@@ -225,7 +225,7 @@ model.add(Activation('softmax'))
 ```
 
 #### Accuracy & Loss Plot
-![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2335/accuracy-loss-plot.png "Accuracy & Loss Plot")
+![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2338/accuracy-loss-plot.png "Accuracy & Loss Plot")
 
 #### Concepts Used
 1. Learning Rate
