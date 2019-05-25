@@ -159,7 +159,7 @@ model.add(Activation('softmax'))
 ```
 
 ### Accuracy & Loss Plot
-![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2332/accuracy-loss-plot.png "Accuracy & Loss Plot")
+![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2336/accuracy-loss-plot.png "Accuracy & Loss Plot")
 
 #### Concepts Used
 1. Batch Normalization
@@ -284,7 +284,7 @@ model.add(Activation('softmax'))
 ```
 
 #### Accuracy & Loss Plot
-![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2334/accuracy-loss-plot.png "Accuracy & Loss Plot")
+![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2337/accuracy-loss-plot.png "Accuracy & Loss Plot")
 
 #### Concepts Used
 1. No. of epochs
