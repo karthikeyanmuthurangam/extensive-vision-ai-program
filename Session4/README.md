@@ -117,7 +117,7 @@ model.add(Activation('softmax'))
 
 ## MNIST Convolution Neural Network Model - 2 (Session_4_Second.ipynb)
 
-Achieved **99.42 Validation accuracy** with the following hyper parameters
+Achieved **98.21 Validation accuracy** with the following hyper parameters
 
 |Hyperparameter Name| Hyperparameter Value|
 |-------------------|---------------------|
