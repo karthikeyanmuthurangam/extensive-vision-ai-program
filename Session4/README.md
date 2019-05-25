@@ -242,12 +242,15 @@ Achieved **99.42 Validation accuracy** with the following hyper parameters
 
 #### Model Code
 
-```from keras.layers import Activation
+```
+from keras.layers import Activation
 model = Sequential()
 
 # Convolution Block 
 model.add(Convolution2D(16, 3, 3, activation='relu', input_shape=(28,28,1)))
 model.add(BatchNormalization())
+model.add(Dropout(0.1))
+
 model.add(Convolution2D(32, 3, 3, activation='relu')) #24
 model.add(BatchNormalization())
 model.add(Dropout(0.1))
@@ -259,13 +262,14 @@ model.add(Convolution2D(10, 1, 1, activation='relu')) #12
 
 model.add(Convolution2D(16, 3, 3, activation='relu')) #10
 model.add(BatchNormalization())
-model.add(Dropout(0.2))
+model.add(Dropout(0.1))
 
 model.add(MaxPooling2D(pool_size=(2,2))) #5
+model.add(Convolution2D(10, 1, 1, activation='relu')) #5
 
-model.add(Convolution2D(16, 3, 3, activation='relu')) #2
+model.add(Convolution2D(16, 3, 3, activation='relu')) #3
 model.add(BatchNormalization())
-model.add(Dropout(0.2))
+model.add(Dropout(0.1))
 
 model.add(Convolution2D(10, 3))
 model.add(Flatten())
