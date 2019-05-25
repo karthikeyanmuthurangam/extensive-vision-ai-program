@@ -37,13 +37,20 @@ Achieved **99.1 Validation accuracy** with the following hyper parameters
 from keras.layers import Activation
 model = Sequential()
 
- 
+# Convolution Block 
 model.add(Convolution2D(16, 3, 3, activation='relu', input_shape=(28,28,1)))
-model.add(Convolution2D(16, 3, 3, activation='relu')) #26
+model.add(Convolution2D(64, 3, 3, activation='relu')) #26
+
+# Transition Block
 model.add(MaxPooling2D(pool_size=(2,2))) #12
+model.add(Convolution2D(10, 1, 1, activation='relu')) #12
+
+# Convoltion Block
 model.add(Convolution2D(16, 3, 3, activation='relu')) #10
 model.add(Convolution2D(16, 3, 3, activation='relu')) #8
 model.add(Convolution2D(16, 3, 3, activation='relu')) #6
+
+
 model.add(Convolution2D(10, 6))
 model.add(Flatten())
 model.add(Activation('softmax'))
@@ -181,8 +188,8 @@ Achieved **99.34 Validation accuracy** with the following hyper parameters
 |Hyperparameter Name| Hyperparameter Value|
 |-------------------|---------------------|
 |No. of Parameters| 10,676|
-|No. of Epochs| 10 |
-|Batch Size| 64|
+|No. of Epochs| 20 |
+|Batch Size| 128 |
 
 #### Model Code
 
@@ -236,7 +243,7 @@ Achieved **99.42 Validation accuracy** with the following hyper parameters
 
 |Hyperparameter Name| Hyperparameter Value|
 |-------------------|---------------------|
-|No. of Parameters| 9,822|
+|No. of Parameters| 9,982|
 |No. of Epochs| 30 |
 |Batch Size| 64|
 
