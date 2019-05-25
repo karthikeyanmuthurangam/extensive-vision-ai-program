@@ -82,6 +82,9 @@ model.add(Activation('softmax'))
 ##### SoftMax
 - Softmax is a probability-like function that is used in the Prediction layer of a multi-class classification model, it squeezes the output layer values between 0 and 1.
 
+##### Transition Layer
+- Typically Transition layer is a combination of convolution and pooling layer. It helps in improving model compactness and reduce the number of feature-maps
+
 ##### Validation Checks
 
 - Adding Validation Check helped understand, how the model is performing very early
