@@ -1,3 +1,5 @@
+# Architectural Basics
+
 - [MNIST Convolution Neural Network Model - 1](#mnist-convolution-neural-network-model---1-session_4_firstipynb)
   * [Model Code](#model-code)
   * [Accuracy & Loss Plot](#accuracy--loss-plot)
@@ -62,10 +64,23 @@ model.add(Activation('softmax'))
 - Building a simple Neural Network model using the basic building block of CNN (Convolution, Pooling, Activation) and incrementally adding the right convolution/transition block at the right layer helps in the understanding the model better
 - Validation accuracy is always less than the training accuracy
 
+##### Number of layers
+- Number of layers (Convolution, Activation, Pooling) depends on the input image size, accuracy required and the resources available (GPU)
+- Typically small size imaged like 28x28 required lesser number of layers
+
 ##### Number of kernels
 - Number of kernels depends on the input image size, accuracy required and the resources available (GPU)
 - Small number of kernels (<=16) are good enough to train the MNIST dataset
 - Large number of kernels overfits the model on the training data leading to very high training accuracy but does not really have high accuracy on the validation data
+
+##### Receptive Field
+- Receptive field is the region in the input space that any kernel is looking at.
+- RF of 3x3 at first convolution layer is 3x3
+- RF of 3x3 at second convolution layer is 5x5 (it is looking at the 3x3 of first layer as well as 3x3 of input layer)
+- RF of 1x1 at any convolution layer is 1x1
+
+##### SoftMax
+- Softmax is a probability-like function that is used in the Prediction layer of a multi-class classification model, it squeezes the output layer values between 0 and 1.
 
 ##### Validation Checks
 
