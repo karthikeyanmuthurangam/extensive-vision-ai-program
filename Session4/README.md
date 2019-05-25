@@ -71,7 +71,7 @@ model.add(Activation('softmax'))
 
 - Adding Validation Check helped understand, how the model is performing very early
 
-#### MaxPooling
+##### MaxPooling
 
 - Maxpooling reduced the number of parameters for next layer and computation in the network
 - Ideally Maxpooling should be positioned 2 convolution layer after the input and 2 convolution layer before the output (prediction) layer
