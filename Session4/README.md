@@ -1,6 +1,6 @@
-## MNIST CNN
+# MNIST CNN
 
-## Basic Network Model (Session_4_First.ipynb)
+# MNIST Convolution Neural Network Model - 1 (Session_4_First.ipynb)
 
 Achieved **99.1 Validation accuracy** with the following hyper parameters
 
@@ -26,7 +26,7 @@ Achieved **99.1 Validation accuracy** with the following hyper parameters
 - Large number of kernels extracts rich set of features of the images leading to overfitting of the model on the training data leading to very high training accuracy but not really leading to a high accuracy on the test/validation data
 - 
 
-## Improving Accuracy (Session_4_Second.ipynb)
+# MNIST Convolution Neural Network Model - 2 (Session_4_Second.ipynb)
 
 Achieved **99.42 Validation accuracy** with the following hyper parameters
 
@@ -47,7 +47,7 @@ Achieved **99.42 Validation accuracy** with the following hyper parameters
 
 ### Observations
 
-## Improving Accuracy (Session_4_Third.ipynb)
+# MNIST Convolution Neural Network Model - 3 (Session_4_Third.ipynb)
 
 Achieved **99.34 Validation accuracy** with the following hyper parameters
 
@@ -67,7 +67,7 @@ Achieved **99.34 Validation accuracy** with the following hyper parameters
 
 ### Observations
 
-## Improving Accuracy (Session_4_Fourth.ipynb)
+# MNIST Convolution Neural Network Model - 4 (Session_4_Fourth.ipynb)
 
 Achieved **99.42 Validation accuracy** with the following hyper parameters
 
