@@ -1,11 +1,24 @@
-[MNIST Convolution Neural Network Model - 1](#mnist-convolution-neural-network-model---1-session_4_firstipynb)
-
-[MNIST Convolution Neural Network Model - 2](#mnist-convolution-neural-network-model---2-session_4_secondipynb)
-
-[MNIST Convolution Neural Network Model - 3](#mnist-convolution-neural-network-model---3-session_4_thirdipynb)
-
-[MNIST Convolution Neural Network Model - 4](#mnist-convolution-neural-network-model---4-session_4_fourthipynb)
-
+- [MNIST Convolution Neural Network Model - 1](#mnist-convolution-neural-network-model---1-session_4_firstipynb)
+  * [Model Code](#model-code)
+  * [Accuracy & Loss Plot](#accuracy--loss-plot)
+  * [Concepts Used](#concepts-used)
+  * [Observations](#observations)
+- [MNIST Convolution Neural Network Model - 2](#mnist-convolution-neural-network-model---2-session_4_secondipynb)
+  * [Model Code](#model-code-1)
+  * [Accuracy & Loss Plot](#accuracy--loss-plot-1)
+  * [Concepts Used](#concepts-used-1)
+  * [Observations](#observations-1)
+- [MNIST Convolution Neural Network Model - 3](#mnist-convolution-neural-network-model---3-session_4_thirdipynb)
+  * [Model Code](#model-code-2)
+  * [Accuracy & Loss Plot](#accuracy--loss-plot-2)
+  * [Concepts Used](#concepts-used-2)
+  * [Observations](#observations-2)
+- [MNIST Convolution Neural Network Model - 4](#mnist-convolution-neural-network-model---4-session_4_fourthipynb)
+  * [Model Code](#model-code-3)
+  * [Accuracy & Loss Plot](#accuracy--loss-plot-3)
+  * [Concepts Used](#concepts-used-3)
+  * [Observations](#observations-3)
+  
 ## MNIST Convolution Neural Network Model - 1 (Session_4_First.ipynb)
 
 Achieved **99.1 Validation accuracy** with the following hyper parameters
