@@ -1,3 +1,11 @@
+[MNIST Convolution Neural Network Model - 1](#mnist-convolution-neural-network-model---1-session_4_firstipynb)
+
+[MNIST Convolution Neural Network Model - 2](#mnist-convolution-neural-network-model---2-session_4_secondipynb)
+
+[MNIST Convolution Neural Network Model - 3](#mnist-convolution-neural-network-model---3-session_4_thirdipynb)
+
+[MNIST Convolution Neural Network Model - 4](#mnist-convolution-neural-network-model---4-session_4_fourthipynb)
+
 ## MNIST Convolution Neural Network Model - 1 (Session_4_First.ipynb)
 
 Achieved **99.1 Validation accuracy** with the following hyper parameters
@@ -8,7 +16,23 @@ Achieved **99.1 Validation accuracy** with the following hyper parameters
 |No. of Epochs| 10 |
 |Batch Size| 32|
 
-![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2312/model-code.png "Model Code")
+#### Model Code
+
+```
+from keras.layers import Activation
+model = Sequential()
+
+ 
+model.add(Convolution2D(16, 3, 3, activation='relu', input_shape=(28,28,1)))
+model.add(Convolution2D(16, 3, 3, activation='relu')) #26
+model.add(MaxPooling2D(pool_size=(2,2))) #12
+model.add(Convolution2D(16, 3, 3, activation='relu')) #10
+model.add(Convolution2D(16, 3, 3, activation='relu')) #8
+model.add(Convolution2D(16, 3, 3, activation='relu')) #6
+model.add(Convolution2D(10, 6))
+model.add(Flatten())
+model.add(Activation('softmax'))
+```
 
 #### Accuracy & Loss Plot
 ![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2312/accuracy-loss-plot.png "Accuracy & Loss Plot")
@@ -63,7 +87,38 @@ Achieved **99.42 Validation accuracy** with the following hyper parameters
 |No. of Epochs| 10 |
 |Batch Size| 64|
 
-![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2332/model-code.png "Model Code")
+### Model Code
+
+```
+from keras.layers import Activation
+model = Sequential()
+
+# Convolution Block 
+model.add(Convolution2D(16, 3, 3, activation='relu', input_shape=(28,28,1)))
+model.add(BatchNormalization())
+model.add(Convolution2D(32, 3, 3, activation='relu')) #24
+model.add(BatchNormalization())
+model.add(Dropout(0.1))
+
+# Transition Block
+model.add(MaxPooling2D(pool_size=(2,2))) #12
+model.add(Convolution2D(10, 1, 1, activation='relu')) #12
+# Convolution Block
+
+model.add(Convolution2D(16, 3, 3, activation='relu')) #10
+model.add(BatchNormalization())
+model.add(Dropout(0.2))
+
+model.add(MaxPooling2D(pool_size=(2,2))) #5
+
+model.add(Convolution2D(16, 3, 3, activation='relu')) #2
+model.add(BatchNormalization())
+model.add(Dropout(0.2))
+
+model.add(Convolution2D(10, 3))
+model.add(Flatten())
+model.add(Activation('softmax'))
+```
 
 ### Accuracy & Loss Plot
 ![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2332/accuracy-loss-plot.png "Accuracy & Loss Plot")
@@ -98,7 +153,38 @@ Achieved **99.34 Validation accuracy** with the following hyper parameters
 |No. of Epochs| 10 |
 |Batch Size| 64|
 
-![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2335/model-code.png "Model Code")
+#### Model Code
+
+```
+from keras.layers import Activation
+model = Sequential()
+
+# Convolution Block 
+model.add(Convolution2D(16, 3, 3, activation='relu', input_shape=(28,28,1)))
+model.add(BatchNormalization())
+model.add(Convolution2D(32, 3, 3, activation='relu')) #24
+model.add(BatchNormalization())
+model.add(Dropout(0.1))
+
+# Transition Block
+model.add(MaxPooling2D(pool_size=(2,2))) #12
+model.add(Convolution2D(10, 1, 1, activation='relu')) #12
+# Convolution Block
+
+model.add(Convolution2D(16, 3, 3, activation='relu')) #10
+model.add(BatchNormalization())
+model.add(Dropout(0.2))
+
+model.add(MaxPooling2D(pool_size=(2,2))) #5
+
+model.add(Convolution2D(16, 3, 3, activation='relu')) #2
+model.add(BatchNormalization())
+model.add(Dropout(0.2))
+
+model.add(Convolution2D(10, 3))
+model.add(Flatten())
+model.add(Activation('softmax'))
+```
 
 #### Accuracy & Loss Plot
 ![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2335/accuracy-loss-plot.png "Accuracy & Loss Plot")
@@ -124,7 +210,36 @@ Achieved **99.42 Validation accuracy** with the following hyper parameters
 |Batch Size| 64|
 
 #### Model Code
-![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2334/model-code.png "Model Code")
+
+```from keras.layers import Activation
+model = Sequential()
+
+# Convolution Block 
+model.add(Convolution2D(16, 3, 3, activation='relu', input_shape=(28,28,1)))
+model.add(BatchNormalization())
+model.add(Convolution2D(32, 3, 3, activation='relu')) #24
+model.add(BatchNormalization())
+model.add(Dropout(0.1))
+
+# Transition Block
+model.add(MaxPooling2D(pool_size=(2,2))) #12
+model.add(Convolution2D(10, 1, 1, activation='relu')) #12
+# Convolution Block
+
+model.add(Convolution2D(16, 3, 3, activation='relu')) #10
+model.add(BatchNormalization())
+model.add(Dropout(0.2))
+
+model.add(MaxPooling2D(pool_size=(2,2))) #5
+
+model.add(Convolution2D(16, 3, 3, activation='relu')) #2
+model.add(BatchNormalization())
+model.add(Dropout(0.2))
+
+model.add(Convolution2D(10, 3))
+model.add(Flatten())
+model.add(Activation('softmax'))
+```
 
 #### Accuracy & Loss Plot
 ![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2334/accuracy-loss-plot.png "Accuracy & Loss Plot")
