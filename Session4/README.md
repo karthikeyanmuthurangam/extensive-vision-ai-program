@@ -1,6 +1,4 @@
-# MNIST CNN
-
-# MNIST Convolution Neural Network Model - 1 (Session_4_First.ipynb)
+## MNIST Convolution Neural Network Model - 1 (Session_4_First.ipynb)
 
 Achieved **99.1 Validation accuracy** with the following hyper parameters
 
@@ -12,10 +10,10 @@ Achieved **99.1 Validation accuracy** with the following hyper parameters
 
 ![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2312/model-code.png "Model Code")
 
-### Accuracy & Loss Plot
+#### Accuracy & Loss Plot
 ![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2312/accuracy-loss-plot.png "Accuracy & Loss Plot")
 
-### Concepts Used
+#### Concepts Used
 1. 3x3 Convolutions 
 2. 1x1 Convolutions
 3. MaxPooling
@@ -41,13 +39,13 @@ Achieved **99.42 Validation accuracy** with the following hyper parameters
 ### Accuracy & Loss Plot
 ![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2332/accuracy-loss-plot.png "Accuracy & Loss Plot")
 
-### Concepts Used
+#### Concepts Used
 1. Batch Normalization
 2. DropOut
 
-### Observations
+#### Observations
 
-# MNIST Convolution Neural Network Model - 3 (Session_4_Third.ipynb)
+## MNIST Convolution Neural Network Model - 3 (Session_4_Third.ipynb)
 
 Achieved **99.34 Validation accuracy** with the following hyper parameters
 
@@ -59,15 +57,15 @@ Achieved **99.34 Validation accuracy** with the following hyper parameters
 
 ![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2335/model-code.png "Model Code")
 
-### Accuracy & Loss Plot
+#### Accuracy & Loss Plot
 ![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2335/accuracy-loss-plot.png "Accuracy & Loss Plot")
 
-### Concepts Used
+#### Concepts Used
 1. Learning Rate
 
-### Observations
+#### Observations
 
-# MNIST Convolution Neural Network Model - 4 (Session_4_Fourth.ipynb)
+## MNIST Convolution Neural Network Model - 4 (Session_4_Fourth.ipynb)
 
 Achieved **99.42 Validation accuracy** with the following hyper parameters
 
@@ -77,14 +75,14 @@ Achieved **99.42 Validation accuracy** with the following hyper parameters
 |No. of Epochs| 30 |
 |Batch Size| 64|
 
-### Model Code
+#### Model Code
 ![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2334/model-code.png "Model Code")
 
-### Accuracy & Loss Plot
+#### Accuracy & Loss Plot
 ![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session4/experiments/experiment%2334/accuracy-loss-plot.png "Accuracy & Loss Plot")
 
-### Concepts Used
+#### Concepts Used
 1. Batch Size
 2. No. of epochs
 
-### Observations
+#### Observations
