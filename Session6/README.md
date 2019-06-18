@@ -28,7 +28,7 @@ CIFAR-10 Modified network contains the below changes
 3. Fixed kernel scaleup and down (1x1)
 4. Optimal Dropouts placements
 
-After training the CIFAR-10 network for 100 epochs using the modified network, achieved 86.19 Validation accuracy epoch with the following hyper parameters
+After training the CIFAR-10 network for 100 epochs using the modified network, achieved 86.19 Validation accuracy with the following hyper parameters
 
 |Hyperparameter Name| Hyperparameter Value|
 |-------------------|---------------------|
@@ -39,3 +39,25 @@ After training the CIFAR-10 network for 100 epochs using the modified network, a
 #### Accuracy & Loss Plot
 
 ![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session6/Modified%20Network.png "Accuracy & Loss Plot")
+
+#### Functional API Network
+
+CIFAR-10 Functional API Network contains the below changes
+
+1. Normal Convolution
+2. Spatially Separable Convolution  (Conv2d(x, (3,1)) followed by Conv2D(x,(3,1))
+3. Depthwise Separable Convolution
+4. Grouped Convolution (use 3x3, 5x5 only)
+5. Grouped Convolution (use 3x3 only, one with dilation = 1, and another with dilation = 2) 
+
+After training the CIFAR-10 Functional API network for 50 epochs, achieved 80.71 Validation accuracy with the following hyper parameters
+
+|Hyperparameter Name| Hyperparameter Value|
+|-------------------|---------------------|
+|No. of Parameters| 684,330|
+|No. of Epochs| 50 |
+|Batch Size| 128|
+
+#### Accuracy & Loss Plot
+
+![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session6/Functional%20API%20Network.png "Accuracy & Loss Plot")
