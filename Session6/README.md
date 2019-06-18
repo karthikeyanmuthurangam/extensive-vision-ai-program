@@ -1,8 +1,8 @@
-## Assignment 6A
-
-### The CIFAR-10 dataset
+## The CIFAR-10 dataset
 
 The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images. 
+
+### Assignment 6A
 
 #### Base Network
 
@@ -39,6 +39,8 @@ After training the CIFAR-10 network for 100 epochs using the modified network, a
 #### Accuracy & Loss Plot
 
 ![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session6/Modified%20Network.png "Accuracy & Loss Plot")
+
+### Assignment 6B
 
 #### Functional API Network
 
