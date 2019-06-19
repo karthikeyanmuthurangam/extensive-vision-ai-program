@@ -6,6 +6,10 @@ https://arxiv.org/pdf/1409.4842.pdf
 
 ![alt text](https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session7/Receptive%20Field%20Calculation.png "Receptive Field Calculation Formula")
 
+Receptive Field Calculation CSV (for easy viewing) -  https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session7/GoogLeNet-Receptive%20Field%20calculation.csv
+
+Receptive Field Calculation is available in https://github.com/karthikeyanmuthurangam/extensive-vision-ai-program/blob/master/Session7/GoogLeNet-Receptive%20Field%20calculation.xlsx
+
 #### Observations
 
 1. Padding for GoogLeNet is not provided in the "GoogLeNet incarnation of the Inception architecture Table". So padding is calculated using the below formula
